@@ -1,0 +1,13 @@
+## React App with Hooks & GraphQL
+
+#### GraphQL Server
+  - created GraphQL server, implemented ApolloServer in server.js, imported typeDefs & resolvers in server.js,
+    created a type & query
+  - created mongodb database, added mongoose library and defined connection to db
+  - added mongo models User & Pin, added Pin & Comment as types in the schema in typeDefs
+
+#### Google OAuth 2.0
+  - exploring react app, edited versions of package.json in client, project dependency tree error with 
+    eslint so removed it from devDependencies
+  - google oauth set up, adding google login button to Auth component, display on splash page
+  - 

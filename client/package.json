@@ -1,0 +1,48 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-ws": "^1.0.20",
+    "axios": "^0.20.0",
+    "date-fns": "^2.16.0",
+    "graphql": "^15.3.0",
+    "graphql-request": "^3.0.0",
+    "graphql-tag": "^2.11.0",
+    "mapbox-gl": "^1.12.0",
+    "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^16.13.1",
+    "react-google-login": "^5.1.21",
+    "react-map-gl": "^5.2.7",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "subscriptions-transport-ws": "^0.9.18"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"src/**\" --ext .js --quiet",
+    "lint:fix": "eslint \"src/**\" --ext .js --quiet --fix"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
