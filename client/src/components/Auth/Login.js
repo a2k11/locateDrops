@@ -11,7 +11,7 @@ const Login = ({ classes }) => {
 
   return (
     <GoogleLogin 
-      clientId="AIzaSyDhsAdOz7Wv4gwdyMlVdnXTWaD1Wq5W9mA"
+      clientId=""
       onSuccess={onSuccess}
     />
   )
