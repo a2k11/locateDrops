@@ -6,13 +6,15 @@ import { withStyles } from "@material-ui/core/styles";
 const Login = ({ classes }) => {
 
   const onSuccess = googleUser => {
-    console.log({ googleUser });
+    const idToken = googleUser.getAuthResponse().id_token
+    console.log(idToken);
   }
 
   return (
     <GoogleLogin 
-      clientId=""
+      clientId={process.env.OAUTH_CLIENT_ID}
       onSuccess={onSuccess}
+      isSignedIn={true}
     />
   )
 };
