@@ -11,7 +11,18 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true })
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
+  context: ({ req }) => {
+    let authToken = null
+    try {
+      authToken = req.headers.authorization
+      if (authToken) {
+        // find or create user
+      }
+    } catch (err) {
+      console.error(`Unable to authenticate user with token ${authToken}`, err)
+    }
+  }
 })
 
 server.listen().then(({ url }) => {

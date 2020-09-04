@@ -9,5 +9,5 @@
 #### Google OAuth 2.0
   - exploring react app, edited versions of package.json in client, project dependency tree error with 
     eslint so removed it from devDependencies
-  - google oauth set up, adding google login button to Auth component, display on splash page
-  - 
+  - google oauth set up, adding google login button to Auth component, display on splash page, fix dotenv import
+  - authenticating users from apollo server, added context to apollo server for user authenticating, 
