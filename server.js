@@ -4,6 +4,8 @@ const typeDefs = require('./typeDefs')
 const resolvers = require('./resolvers')
 const mongoose = require('mongoose')
 require('dotenv').config()
+const { findOrCreateUser } = require('./controllers/userController')
+const { isNullableType } = require('graphql')
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true })
   .then(() => console.log("db connects"))
@@ -12,16 +14,18 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true })
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: ({ req }) => {
+  context: async ({ req }) => {
     let authToken = null
+    let currentUser = isNullableType
     try {
       authToken = req.headers.authorization
       if (authToken) {
-        // find or create user
+        currentUser = await findOrCreateUser(authToken)
       }
     } catch (err) {
       console.error(`Unable to authenticate user with token ${authToken}`, err)
     }
+    return ( currentUser )
   }
 })
 
