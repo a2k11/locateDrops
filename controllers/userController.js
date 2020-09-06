@@ -22,7 +22,7 @@ const verifyAuthToken = async token => {
     }
 }
 
-const checkIfUserExists = async email => await (await User.findOne({ email })).exec()
+const checkIfUserExists = async email => await User.findOne({ email }).exec()
 
 const createNewUser = googleUser => {
     const { name, email, picture } = googleUser

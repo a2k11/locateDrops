@@ -28,7 +28,7 @@ const Login = ({ classes }) => {
 
   return (
     <GoogleLogin 
-      clientId={process.env.OAUTH_CLIENT_ID}
+      clientId=""
       onSuccess={onSuccess}
       isSignedIn={true}
     />
