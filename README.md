@@ -19,4 +19,6 @@
     state & dispatch to create initial state 
   - added styling to login page, moved me query to graphql directory, provided better error 
     handling, refactored reducer with destructuring of action 
+  - creating protected route for app, adding new case is_logged_in to reducer, adding isAuth to context to 
+    track user login, if logged in user is kicked to app page, implemented ProtectedRoute.js
   - 
