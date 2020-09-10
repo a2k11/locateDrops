@@ -44,6 +44,7 @@ const Login = ({ classes }) => {
         onSuccess={onSuccess}
         onFailure={onFailure}
         isSignedIn={true}
+        buttonText="This Way"
         theme="dark"
       />
     </div>

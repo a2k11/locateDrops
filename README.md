@@ -21,4 +21,6 @@
     handling, refactored reducer with destructuring of action 
   - creating protected route for app, adding new case is_logged_in to reducer, adding isAuth to context to 
     track user login, if logged in user is kicked to app page, implemented ProtectedRoute.js
+  - building the header component, grabbing state from Context & currentUser from state, building 
+    Header component with user data, returning Header in App
   - 
