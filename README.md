@@ -13,16 +13,22 @@
     fix dotenv import,
   - authenticating users from apollo server, added context to apollo server for user authenticating, 
     setting up verifying user setting up auth token, checking to create new user, fixed OAUTH bugs
+#### Managing App State with useReducer / useContext Hooks
   - state management system, setting up context.js with useContext to create Context serving as 
     initial state, to make changes to Context we use reducer.js and useReducer with state & action, 
     useReducer hook takes reducer function & initialState from Context, Context Provider takes 
     state & dispatch to create initial state 
   - added styling to login page, moved me query to graphql directory, provided better error 
     handling, refactored reducer with destructuring of action 
+#### Protecting our App Route
   - creating protected route for app, adding new case is_logged_in to reducer, adding isAuth to context to 
     track user login, if logged in user is kicked to app page, implemented ProtectedRoute.js
+#### Building Header
   - building the header component, grabbing state from Context & currentUser from state, building 
     Header component with user data, returning Header in App
   - build signout button, importing GoogleLogout plus adding props with render a jsx custom component, 
     onSignout reducer sets auth to false currentUser to null
+#### Building Map / User Geolocation
+  - creating and styling map, adding map component from react-map-gl, adding useState to change location in 
+    viewport, added navigationControl from react-map-gl for zoom feature
   - 
