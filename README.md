@@ -31,4 +31,6 @@
 #### Building Map / User Geolocation
   - creating and styling map, adding map component from react-map-gl, adding useState to change location in 
     viewport, added navigationControl from react-map-gl for zoom feature
+  - using pin for current user position, fixed env variables with 'REACT_APP_', removed dotenv from client
+    package.js, added geolocation to map with react hook useEffect, defined pin for Map to update with position
   - 
