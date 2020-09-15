@@ -33,4 +33,6 @@
     viewport, added navigationControl from react-map-gl for zoom feature
   - using pin for current user position, fixed env variables with 'REACT_APP_', removed dotenv from client
     package.js, added geolocation to map with react hook useEffect, defined pin for Map to update with position
+  - adding draft pin, implemented onClick event with ReactMapGL Component, imported Context updated draft 
+    attribute, created reducer events for draft, displayed pin through UI
   - 
