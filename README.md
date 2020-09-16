@@ -35,4 +35,6 @@
     package.js, added geolocation to map with react hook useEffect, defined pin for Map to update with position
   - adding draft pin, implemented onClick event with ReactMapGL Component, imported Context updated draft 
     attribute, created reducer events for draft, displayed pin through UI
-  - 
+  - adding blog area for pin content, grabbed state inside Blog component & placed in Map, compared draft to set  
+    BlogContent with createPin or noContent
+  -  
