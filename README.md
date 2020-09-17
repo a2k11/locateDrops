@@ -37,4 +37,6 @@
     attribute, created reducer events for draft, displayed pin through UI
   - adding blog area for pin content, grabbed state inside Blog component & placed in Map, compared draft to set  
     BlogContent with createPin or noContent
-  -  
+  - enhancing blog components, added functionality to CreatePin component by defining title content discard submit
+    features, defined NoContent as simple explorer icon with message
+  - 
