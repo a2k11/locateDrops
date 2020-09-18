@@ -39,4 +39,7 @@
     BlogContent with createPin or noContent
   - enhancing blog components, added functionality to CreatePin component by defining title content discard submit
     features, defined NoContent as simple explorer icon with message
+  - managing pin content state & deleting draft pins, added useState & useContext hooks for managing state, 
+    created onChange events for each button & input & text, implemented handleDeleteDraft, created new reducer 
+    case for state update
   - 
