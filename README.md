@@ -33,6 +33,7 @@
     viewport, added navigationControl from react-map-gl for zoom feature
   - using pin for current user position, fixed env variables with 'REACT_APP_', removed dotenv from client
     package.js, added geolocation to map with react hook useEffect, defined pin for Map to update with position
+#### Creating Blog Area & Adding Draft Pins
   - adding draft pin, implemented onClick event with ReactMapGL Component, imported Context updated draft 
     attribute, created reducer events for draft, displayed pin through UI
   - adding blog area for pin content, grabbed state inside Blog component & placed in Map, compared draft to set  
@@ -42,4 +43,6 @@
   - managing pin content state & deleting draft pins, added useState & useContext hooks for managing state, 
     created onChange events for each button & input & text, implemented handleDeleteDraft, created new reducer 
     case for state update
-  - 
+#### Image Uploads with Cloudinary Web API
+  - uploading images with cloudinary, 
+#### 
