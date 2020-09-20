@@ -20,8 +20,8 @@ const Map = ({ classes }) => {
   const [viewport, setViewport] = useState(INITIAL_VIEWPORT)
   const [userPosition, setUserPosition] = useState(null)
   useEffect(() => {
-    getUserPosition()
-  }, [])
+    getUserPosition();
+  }, []);
 
   const getUserPosition = () => {
     if ("geolocation" in navigator) {
