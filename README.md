@@ -44,5 +44,7 @@
     created onChange events for each button & input & text, implemented handleDeleteDraft, created new reducer 
     case for state update
 #### Image Uploads with Cloudinary Web API
-  - uploading images with cloudinary, 
-#### 
+  - uploading images with cloudinary, added new environment variables for cloudinary, created handleImageUpload to
+    create FormData and populate its values, made handleSubmit async, use axios to handle post call
+#### Creating New User Pins
+  - 
