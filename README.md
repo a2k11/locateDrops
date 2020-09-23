@@ -47,4 +47,7 @@
   - uploading images with cloudinary, added new environment variables for cloudinary, created handleImageUpload to
     create FormData and populate its values, made handleSubmit async, use axios to handle post call
 #### Creating New User Pins
+  - create_pin mutation, added Mutation & Input types, added Mutation resolver which creates Pins in GraphQL, 
+    create client side mutation in mutations.js, added GraphQLClient to CreatePin component, wire up mutation to 
+    handleSubmit by creating mutation request, wipe state at the end of submit
   - 
