@@ -50,4 +50,7 @@
   - create_pin mutation, added Mutation & Input types, added Mutation resolver which creates Pins in GraphQL, 
     create client side mutation in mutations.js, added GraphQLClient to CreatePin component, wire up mutation to 
     handleSubmit by creating mutation request, wipe state at the end of submit
+#### Making Custom useClient Hook
+  - create useClient hook with GraphQLClient, added idToken to state inside client, exported client to CreatePin 
+    component, exported BASE_URL to login component
   - 
