@@ -58,4 +58,7 @@
     updated map to display submitted pins
 #### Popups & Highlighting New Pins
   - added fn highlightNewPin to map component, added library to analyze time since pin creation
-  - 
+  - adding popups to pins, added fn handleSelectPin to PinIcon component's onClick, added currentPin to state and
+    reducer event for SET_PIN, added delete button for author of pin with isAuthUser fn & button with DeleteIcon 
+    component
+#### 
