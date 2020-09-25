@@ -67,5 +67,7 @@
 #### Displaying Pin Content
   - building PinContent component, added currentPin & pinContent view to Blog component, adding for display the 
     title & author & createdAt && content of selected Pin 
-####
+#### Comment Functionality
+  - building comments for display, created Comments & CreateComment components, added both components to PinContent
   - 
+
