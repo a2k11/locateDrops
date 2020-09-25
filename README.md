@@ -61,4 +61,7 @@
   - adding popups to pins, added fn handleSelectPin to PinIcon component's onClick, added currentPin to state and
     reducer event for SET_PIN, added delete button for author of pin with isAuthUser fn & button with DeleteIcon 
     component
+#### Deleting User Pins
+  - DELETE_PIN mutation, added deletePin mutation with pinId as input, created deletePin resolver, added fn 
+    handleDeletePin in Map component, created reducer event to update state & filter pins
 #### 
