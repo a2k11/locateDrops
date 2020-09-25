@@ -64,4 +64,8 @@
 #### Deleting User Pins
   - DELETE_PIN mutation, added deletePin mutation with pinId as input, created deletePin resolver, added fn 
     handleDeletePin in Map component, created reducer event to update state & filter pins
-#### 
+#### Displaying Pin Content
+  - building PinContent component, added currentPin & pinContent view to Blog component, adding for display the 
+    title & author & createdAt && content of selected Pin 
+####
+  - 
