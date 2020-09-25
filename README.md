@@ -53,4 +53,6 @@
 #### Making Custom useClient Hook
   - create useClient hook with GraphQLClient, added idToken to state inside client, exported client to CreatePin 
     component, exported BASE_URL to login component
-  - 
+#### Display Pins Created
+  - displaying created pins on map, 
+#### 
