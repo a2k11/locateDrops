@@ -56,4 +56,6 @@
 #### Display Pins Created
   - displaying created pins on map, added new query with resolver, inserted new reducer "GET_PINS" & "CREATE_PIN", 
     updated map to display submitted pins
-#### 
+#### Popups & Highlighting New Pins
+  - added fn highlightNewPin to map component, added library to analyze time since pin creation
+  - 
