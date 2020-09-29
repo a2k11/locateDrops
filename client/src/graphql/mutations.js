@@ -32,9 +32,9 @@ export const DELETE_PIN_MUTATION = `
   }
 `
 
-export const CREATE_COMMENT_MUTATION = `
+export const UPDATE_PIN_MUTATION = `
   mutation($pinId: ID!, $text: String!) {
-    createComment(pinId: $pinId, text: $text) {
+    updatePin(pinId: $pinId, text: $text) {
       _id
       createdAt
       title

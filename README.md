@@ -69,8 +69,9 @@
     title & author & createdAt && content of selected Pin 
 #### Comment Functionality
   - building comments for display, created Comments & CreateComment components, added both components to PinContent
-  - defining CREATE_COMMENT_MUTATION, added type mutation and resolver, set up client mutation to grab pin 
+  - defining UPDATE_PIN_MUTATION, added type mutation and resolver, set up client mutation to grab pin 
     details to update pins array, added mutation request to CreateComment Component, created resolver event for 
-    mutation, still not working have a graphql error
-  - 
+    mutation, fixed naming error for GraphQL mutation, added formatDistanceToNow from date-fns to handle time format
+#### Client Error Handling
+  - handling expired auth tokens, 
 
