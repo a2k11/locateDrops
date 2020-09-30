@@ -16,17 +16,18 @@ const Login = ({ classes }) => {
       const idToken = googleUser.getAuthResponse().id_token
       const client = new GraphQLClient(BASE_URL, {
         headers: { authorization: idToken }
-      })
+      });
       const { me } = await client.request(ME_QUERY)
       dispatch({ type: "LOGIN_USER", payload: me });
       dispatch({ type: "IS_LOGGED_IN", payload: googleUser.isSignedIn() })
     } catch (err) {
-      onFailure(err)
+      onFailure(err);
     }
   };
 
   const onFailure = err => {
     console.error("Error logging in", err)
+    dispatch({ type: "IS_LOGGED_IN", payload: false })
   }
 
   return (

@@ -73,5 +73,7 @@
     details to update pins array, added mutation request to CreateComment Component, created resolver event for 
     mutation, fixed naming error for GraphQL mutation, added formatDistanceToNow from date-fns to handle time format
 #### Client Error Handling
-  - handling expired auth tokens, 
+  - handling expired auth tokens, after login failure reducer IS_LOGGED_IN is set to false due to expired token
+#### Live data with GraphQL Subscriptions & Apollo Client
+  - 
 
