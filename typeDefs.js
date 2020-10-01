@@ -44,4 +44,10 @@ module.exports = gql`
     deletePin(pinId: ID!): Pin
     updatePin(pinId: ID!, text: String!): Pin
   }
+
+  type Subscription {
+    pinAdded: Pin
+    pinDeleted: Pin
+    pinUpdated: Pin
+  }
 `
