@@ -76,6 +76,9 @@
   - handling expired auth tokens, after login failure reducer IS_LOGGED_IN is set to false due to expired token
 #### Live data with GraphQL Subscriptions & Apollo Client
   - implementing subscriptions on backend, subscriptions allow for listening to data changes, defined subscription 
-    types, creating publisher / subscriber pattern, created resolver for pin_added, 
-  - 
+    types, creating publisher / subscriber pattern, created resolver for pin_added & pin_deleted & pin_updated, 
+    in index.js created apollo client with websocket link & inmemory cache which is wrapped around context 
+  - added subscriptions to live data changes with apollo client, added subscriptions to Map component, moved 
+    dispatch actions to subscriptions, created subscriptions.js to type define what these subscriptions return
+#### 
 
