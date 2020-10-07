@@ -80,5 +80,9 @@
     in index.js created apollo client with websocket link & inmemory cache which is wrapped around context 
   - added subscriptions to live data changes with apollo client, added subscriptions to Map component, moved 
     dispatch actions to subscriptions, created subscriptions.js to type define what these subscriptions return
-#### 
+#### Styling For Mobile Design
+  - implementing useMediaQuery for easy mobile & response design, added conditional for mobile style & scrollzoom 
+    to Map component, added useMediaQuery to Header & Blog & CreatePin & Signout components' styling
+#### Improving App by Fixing Problems
+  - 
 
