@@ -29,15 +29,25 @@ const Map = ({ classes }) => {
   const client = useClient();
   const mobileSize = useMediaQuery('(max-width: 650px)');
   const { state, dispatch } = useContext(Context);
+  
   useEffect(() => {
     getPins()
   }, []);
   const [viewport, setViewport] = useState(INITIAL_VIEWPORT)
   const [userPosition, setUserPosition] = useState(null)
+
   useEffect(() => {
     getUserPosition();
   }, []);
   const [popup, setPopop] = useState(null);
+
+  // remove popup author delete
+  useEffect(() => {
+    const pinExists = popup && state.pins.findIndex(pin => pin._id === popup._id) > -1;
+    if (!pinExists) {
+      setPopup(null)
+    }
+  }, [state.pins.length])
 
   const getUserPosition = () => {
     if ("geolocation" in navigator) {
