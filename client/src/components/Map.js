@@ -29,7 +29,7 @@ const Map = ({ classes }) => {
   const client = useClient();
   const mobileSize = useMediaQuery('(max-width: 650px)');
   const { state, dispatch } = useContext(Context);
-  
+
   useEffect(() => {
     getPins()
   }, []);
@@ -45,7 +45,7 @@ const Map = ({ classes }) => {
   useEffect(() => {
     const pinExists = popup && state.pins.findIndex(pin => pin._id === popup._id) > -1;
     if (!pinExists) {
-      setPopup(null)
+      setPopop(null)
     }
   }, [state.pins.length])
 

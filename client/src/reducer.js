@@ -58,7 +58,7 @@ export default function reducer(state, { type, payload }) {
       const filteredPins = state.pins.filter(pin => pin._id !== deletedPin._id);
       if (state.currentPin) {
         const isCurrentPin = deletedPin._id === state.currentPin._id;
-        if (currentPin) {
+        if (isCurrentPin) {
           return {
             ...state,
             pins: filteredPins,
