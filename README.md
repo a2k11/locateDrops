@@ -85,5 +85,6 @@
     to Map component, added useMediaQuery to Header & Blog & CreatePin & Signout components' styling
 #### Improving App by Fixing Problems
   - useEffect hook in Map component to trigger update, edit reducer to set currentPin null in DELETE_PIN
-#### 
+#### Deploying with Vercel & Heroku
+  - added port variable to server, added more env vars to frontend for production deployments
 
